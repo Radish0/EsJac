@@ -13,38 +13,37 @@
         <h1>Calcolatrice</h1>
     </div>
     <div class="center">
-        <input class="col-12" type="number" id="operazioni" >
+        <input class="col-12" style="text-align:right;" type="text" disabled="disabled" placeholder="Digitare i numeri" id="operazioni" >
      </div>
-     <div ms-2>
+     <div>
        <div >
            <input class="tasto btn btn-secondary" type="button" id="7" value="7" onclick="func(this.id)" >
            <input class="tasto btn btn-secondary" type="button" id="8" value="8" onclick="func(this.id)" >
            <input class="tasto btn btn-secondary" type="button" id="9" value="9" onclick="func(this.id)" >
-           <input class="tasto btn btn-secondary" type="button" id="/" value="/" onclick="func(this.id)" >
+           <input class="tasto btn btn-secondary" type="button" id="/" value="/" onclick="operando(this.id)" >
        </div>
        <div>
            <input class="tasto btn btn-secondary" type="button" id="4" value="4" onclick="func(this.id)" >
            <input class="tasto btn btn-secondary" type="button" id="5" value="5" onclick="func(this.id)" >
            <input class="tasto btn btn-secondary" type="button" id="6" value="6" onclick="func(this.id)" >
-           <input class="tasto btn btn-secondary" type="button" id="*" value="X" onclick="func(this.id)" >
+           <input class="tasto btn btn-secondary" type="button" id="*" value="*" onclick="operando(this.id)" >
        </div>
        <div>
             <input class="tasto btn btn-secondary" type="button" id="1" value="1" onclick="func(this.id)" >
             <input class="tasto btn btn-secondary" type="button" id="2" value="2" onclick="func(this.id)" >
             <input class="tasto btn btn-secondary" type="button" id="3" value="3" onclick="func(this.id)" >
-            <input class="tasto btn btn-secondary" type="button" id="-" value="-" onclick="func(this.id)" >
+            <input class="tasto btn btn-secondary" type="button" id="-" value="-" onclick="operando(this.id)" >
         </div>
         <div>
            <input class="tasto btn btn-danger"   value="C" onclick="cancella()" >
            <input class="tasto btn btn-secondary" id="0" value="0" onclick="func(this.id)" >
-           <input class="tasto btn btn-secondary" id="." value="." onclick="func(this.id)" >
-           <input class="tasto btn btn-secondary" id="+" value="+" onclick="func(this.id)" >
+           <input class="tasto btn btn-secondary" id="." value="." onclick="punt(this.id)" >
+           <input class="tasto btn btn-secondary" id="+" value="+" onclick="operando(this.id)" >
          </div>
          <div>
               <button class="res btn btn-success" x value="=" onclick="operazione()">=</button>
           </div>
       </div>
-    <!-- <script src="dati.js"></script>
-    <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>
