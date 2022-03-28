@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-3">
+            Nome:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="text" placeholder="Nome" id="nome">
+        </div>
+        <div class="col-3">
+            Cognome:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="text" placeholder="Cognome" id="cognome">
+        </div>
+        <div class="col-3">
+            Mail:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="email" placeholder="Email" id="email">
+        </div>
+        <div class="col-3">
+            Data di nascita:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="date" id="data">
+        </div>
+        <div class="col-3">
+            Password:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="password" placeholder="Inserisci la tu password" id="password1">
+        </div>
+        <div class="col-3">
+            Conferma Password:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="password" placeholder="Inserisci la tu password" id="password2">
+        </div>
+        <div id="errori" class="col-12">
+        </div>
+        <button class="btn btn-primary mt-2" onclick="Registrazione()">Login</button>
+        <button class="btn btn-success mt-2" onclick="CambiaPagina('Login.html')">Registrazione</button>
+    </div>
+    <script src="dati.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

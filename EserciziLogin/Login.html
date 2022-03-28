@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-2 ms-2 mt-2">
+            Mail:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="email" placeholder="Email" id="email">
+        </div>
+        <div class="col-2 ms-2 mt-2">
+            Password:
+        </div>
+        <div class="col-9">
+            <input class="form-control mt-2" type="password" placeholder="Inserisci la tu password" id="password1">
+        </div>
+        <div id="errori" class="col-12">
+        </div >
+        <div class="col-12 d-flex justify-content-center ms-2 mt-2 ">
+            <button class="btn btn-primary" onclick="Registrati()">Login</button>
+        </div>
+        <div class="col-12 d-flex justify-content-center ms-2 mt-2 ">
+            <button class="btn btn-success" onclick="CambiaPagina('index.html')">Registrati</button>
+        </div>
+    </div>
+    <script src="dati.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
