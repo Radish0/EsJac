@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="Stile.css">
+    </head>
+    <body>
+        <h1 class="text-center">Andamento Covid-19</h1>
+        <div class="row container mx-auto selettore py-2 pl-3">
+            <button class="col-3 btn btn-secondary" onclick="goToSettimana(-1)">
+                Precedente
+            </button>
+            <div class="col-6">
+                <p class="text-center" id="dataBox"></p>
+                <p id="erroriBox" class="text-danger text-center"></p>
+            </div>
+            <button class="col-3 btn btn-primary" onclick="goToSettimana(+1)">
+                Successiva
+            </button>
+        </div>
+
+        <canvas id="myChart" height="200"></canvas>
+
+
+
+        <script src="dati.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
