@@ -1,0 +1,15 @@
+.center{
+        text-align: center; 
+        align-items: center;
+        margin: 0 auto;
+}
+
+.tasto{    
+    margin-top: 1rem;
+    width: 24.6%;
+}
+
+.res{
+    margin-top: 1rem;
+    width: 100%;
+}
